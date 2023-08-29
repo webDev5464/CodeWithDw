@@ -1,0 +1,1 @@
+let PageLinkCSS=document.getElementById("pageLinkCSS");const lengDetailCSS=[{link:"./CSS-Basic-01.html",pageName:"CSS Tutorial"}];lengDetailCSS.map((function(e){PageLinkCSS.innerHTML+=`<li><a href="${e.link}">${e.pageName}</a></li>`}));

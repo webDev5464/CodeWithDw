@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/010f924f62.js" crossorigin="anonymous"></script>
+  <title>CodeWithDw</title>
+  <link rel="stylesheet" href="./link-page.css">
+  <style>
+    .flex {
+      display: flex;
+      align-items: center;
+    }
+
+    .result {
+      width: 100px;
+      background-color: gray;
+    }
+  </style>
+</head>
+
+<body style="font-family: Arial, Helvetica, sans-serif">
+  <section class="headerTopic">
+    <section class="flex">
+      <div class="output"><button class="a-btn" onclick="showOutput(event , 'html')">HTML </button></div>
+      <div class="output"><button class="a-btn" onclick="showOutput(event , 'css')">CSS </button></div>
+    </section>
+    <div class="flex">
+      <section class="outputResult">
+        <div class="result" id="html"><span onclick="this.parentElement.style.display='none'">
+            <div class="cancelBar">
+              <div class="bar01"></div>
+              <div class="bar02"></div>
+            </div>
+          </span>
+          <h1>Menu</h1>
+          <p>HTML Tutorial</p>
+        </div>
+      </section>
+      <section class="outputResult">
+        <div class="result" id="css"><span onclick="this.parentElement.style.display='none'">
+            <div class="cancelBar">
+              <div class="bar01"></div>
+              <div class="bar02"></div>
+            </div>
+          </span>
+          <h1>Menu</h1>
+          <p>CSS Tutorial</p>
+        </div>
+      </section>
+    </div>
+  </section>
+  <script>function showOutput(evt, topicName) { let i, outputBtn, result; outputBtn = document.getElementsByClassName("outputBtn"); for (i = 0; i < outputBtn.length; i++) { outputBtn[i].className = outputBtn[i].className.replace(" active", ""); } document.getElementById(topicName).style.display = "block"; evt.currentTarget.className += " active"; } </script>
+</body>
+
+</html>

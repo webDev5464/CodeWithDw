@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeWithDw</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: white;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .header-top {
+      position: sticky;
+      top: 30px;
+      margin: 0 7em;
+      transition: .5s ease-in-out;
+      -webkit-transition: .5s ease-in-out;
+      -moz-transition: .5s ease-in-out;
+      -ms-transition: .5s ease-in-out;
+      -o-transition: .5s ease-in-out;
+    }
+
+    .header-scroll {
+      position: sticky;
+      margin: 0;
+      top: 0;
+      transition: .5s ease-in-out;
+      -webkit-transition: .5s ease-in-out;
+      -moz-transition: .5s ease-in-out;
+      -ms-transition: .5s ease-in-out;
+      -o-transition: .5s ease-in-out;
+    }
+
+    .header-container {
+      background-color: aquamarine;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 5px 8px rgba(150, 150, 150, 0.462);
+      padding: 1.5em;
+      width: 100%;
+      position: absolute;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-weight: 600;
+    }
+
+    ul {
+      display: flex;
+      align-items: center;
+    }
+
+    li {
+      list-style: none;
+      margin: 0 1em;
+    }
+
+    main {
+      height: 200vh;
+      padding-top: 10em;
+      margin: 0 7em;
+    }
+
+    main p {
+      margin: 2em 0;
+    }
+
+    @media screen and (max-width:780px) {
+      .header-container {
+        padding: .7em;
+      }
+
+      li {
+        margin: 0 .3em;
+      }
+
+      .header-top {
+        margin: 0 3em;
+      }
+
+      main {
+        margin: 0 3em;
+        padding-top: 10em;
+      }
+    }
+
+    @media screen and (max-width:500px) {
+      .header-container {
+        flex-direction: column;
+      }
+
+      .logo {
+        margin: 0 0 1em 0;
+      }
+    }
+
+    @media screen and (max-width:375px) {
+      ul {
+        flex-direction: column;
+      }
+
+      li {
+        margin: .5em 0;
+      }
+
+      main {
+        padding-top: 25em;
+      }
+
+      h2 {
+        font-size: 5vw;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header-top" id="headerScroll">
+    <section class="header-container">
+      <div>
+        <div class="logo">Company Name</div>
+      </div>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+          <li>Info</li>
+          <li>About</li>
+        </ul>
+      </nav>
+    </section>
+  </header>
+  <main>
+    <h2>Scroll-up this page & scroll-down.</h2>
+  </main>
+  <script>window.onscroll = function () { scrollFunction(); }; function scrollFunction() { if (document.body.scrollTop > 50 || document.documentElement.scrollTop < 50) { document.getElementById("headerScroll").className = "header-top"; } else { document.getElementById("headerScroll").className = "header-scroll"; } }; </script>
+</body>
+
+</html>

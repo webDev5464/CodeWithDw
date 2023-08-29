@@ -1,0 +1,117 @@
+.searchBox {
+  position: relative;
+  float: right;
+  position: fixed;
+  right: 0;
+  top: 35vh;
+  animation: RightToLeft 3.5s ease forwards 0s;
+  -webkit-animation: RightToLeft 3.5s ease forwards 0s
+}
+
+.searchIcon {
+  background-color: var(--searchIcon-bg);
+  padding: .5em 1.3em .5em .5em;
+  cursor: pointer;
+  border-radius: 5px 0 0 10px;
+  -webkit-border-radius: 5px 0 0 10px;
+  -moz-border-radius: 5px 0 0 10px;
+  -ms-border-radius: 5px 0 0 10px;
+  -o-border-radius: 5px 0 0 10px
+}
+
+.searchIcon:hover {
+  background-color: var(--searchIcon-bg-hover);
+}
+
+#searchIconChange {
+  width: 1em
+}
+
+#search {
+  padding: .1em;
+  width: 100%;
+  font-size: 20px;
+  border-radius: 5px 0 0 5px;
+  -webkit-border-radius: 5px 0 0 5px;
+  -moz-border-radius: 5px 0 0 5px;
+  -ms-border-radius: 5px 0 0 5px;
+  -o-border-radius: 5px 0 0 5px
+}
+
+.searchInput {
+  position: absolute;
+  right: -1000px;
+  width: 30em;
+}
+
+.searchResponse {
+  right: 0;
+  transition: .4s ease-in-out;
+  -webkit-transition: .4s ease-in-out;
+  -moz-transition: .4s ease-in-out;
+  -ms-transition: .4s ease-in-out;
+  -o-transition: .4s ease-in-out
+}
+
+.searchOver-f {
+  height: 30vh;
+  overflow-y: auto
+}
+
+.searchMenu {
+  border: 1px solid black
+}
+
+.searchList {
+  list-style: none
+}
+
+.item {
+  display: block;
+  color: black;
+  text-decoration: none;
+  padding: .5em .3em;
+  background-color: lightgray
+}
+
+.item:hover {
+  background-color: gray;
+  transition: .3s;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -ms-transition: .3s;
+  -o-transition: .3s
+}
+
+.item:active {
+  background-color: gray;
+  transition: .3s;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -ms-transition: .3s;
+  -o-transition: .3s
+}
+
+@media screen and (max-width:600px) {
+  .searchOver-f {
+    height: 20vh
+  }
+
+  .searchInput {
+    width: 20em
+  }
+
+  .searchIcon {
+    padding: .5 .8 .5 .5
+  }
+}
+
+@media screen and (max-width:450px) {
+  .searchOver-f {
+    height: 20vh
+  }
+
+  .searchInput {
+    width: 15em
+  }
+}

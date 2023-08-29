@@ -1,0 +1,20 @@
+{
+    "editor.fontSize": 19,
+    "editor.tabSize": 5,
+    "liveServer.settings.port": 5501,
+    "liveServer.settings.fullReload": false,
+    "editor.cursorStyle": "block",
+    "editor.cursorBlinking": "expand",
+    "editor.wrappingStrategy": "advanced",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "files.autoSave": "onFocusChange",
+    "editor.wordWrap": "off",
+    "editor.accessibilityPageSize": 10,
+    "editor.fontFamily": "'Exo 2', sans-serif",
+    "editor.detectIndentation": false,
+    "editor.experimental.asyncTokenization": false,
+    "cSpell.words": [
+      "jurny"
+],
+"compile-hero.disable-compile-files-on-did-save-code": false
+}

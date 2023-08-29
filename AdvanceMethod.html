@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/010f924f62.js" crossorigin="anonymous"></script>
+  <link rel="icon" href="./OnlyDW-MetalPNG.png" />
+  <title>
+    CodeWithDw
+  </title>
+  <link rel="stylesheet" href="./CodeWithDW.css" />
+  <link rel="stylesheet" href="./headerAndFooter.css" />
+  <link rel="stylesheet" href="./gen.css" />
+  <link rel="stylesheet" href="./link-page.css" />
+  <link rel="stylesheet" href="./responsive.css" />
+  <link rel="stylesheet" href="./search.css">
+  <link rel="stylesheet" href="./ruff.css">
+  <style>
+    #advanceMethodLink>li:nth-child(1)>a {
+      color: var(--response-content-red);
+    }
+  </style>
+</head>
+
+<body class="index-body">
+  <header class="index-header">
+    <section class="header-heading">
+      <marquee behavior="scroll" direction="left" class="topHeading">Learning Fullstack Web Developing with HTML , CSS , JavaScript , ReactJs FrameWork , NodeJs , MongoDB</marquee>
+    </section>
+    <nav>
+      <div class="logo">
+        <div class="logo-img"><img src="./OnlyDW-MetalPNG.png" alt="" /></div>
+        <div class="logo-name">
+          <p><span>C</span>ode<span>W</span>ith<span>D</span>w</p>
+        </div>
+      </div>
+      <div class="navigation-linkPage" id="navigationIcon">
+        <section class="navBar-linkPage" onclick="change(this)">
+          <div class="bar01-linkPage"></div>
+          <div class="bar02-linkPage"></div>
+          <div class="bar03-linkPage"></div>
+        </section>
+        <script>
+          function change(x) {
+            x.classList.toggle("change-linkPage");
+          }
+        </script>
+      </div>
+      <div class="navigation-detail" id="navigationDetail">
+        <ul>
+          <li><a href="./index.html"><span class="navigation-icon"><i
+                  class="fa-solid fa-house"></i></span><span>Home</span></a></li>
+          <li><a href="./AdvanceMethod-01.html"><span class="navigation-icon"><i
+                  class="fa-solid fa-code"></i></span><span>Advance Method's</span></a></li>
+          <li><a href="#footer"><span class="navigation-icon"><i
+                  class="fa-solid fa-circle-info"></i></span><span>About</span></a></li>
+          <li class="changeTheme" id="changeTheme"><img src="./MoonColor.png" width="20vw" id="changeIcon" alt="" />
+            <p id="modeTitle">Night Mode</p>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section class="leng-detail" id="lengDetailDropDown">
+      <section class="topic-navBtn">
+        <div class="leng-topic-navBtn" id="lengTopicNavBtn"><i class="fas fa-bars-staggered"></i></div>
+      </section>
+      <!-- ! Menu (About : Language to select direct page) -->
+      <section class="menuListSection">
+        <div id="myNav" class="overlay"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+            <div class="LengOptions"><button class="accordion">HTML</button>
+              <div class="panel">
+                <ul id="lengCodeDetailHTML"></ul>
+              </div><button class="accordion">CSS</button>
+              <div class="panel">
+                <ul id="lengCodeDetailCSS"></ul>
+              </div><button class="accordion">JavaScript</button>
+              <div class="panel">
+                <ul id="lengCodeDetailJavaScript"></ul>
+              </div><button class="accordion">React</button>
+              <div class="panel">
+                <ul id="lengCodeDetailReact"></ul>
+              </div><button class="accordion">NodeJs</button>
+              <div class="panel">
+                <ul id="lengCodeDetailNodeJs"></ul>
+              </div><button class="accordion">Advance Method's</button>
+              <div class="panel">
+                <ul id="lengCodeDetailAdvanceMethod"></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="openNav" onclick="openNav()">Menu</div>
+      </section>
+      <!--! /  -->
+      <div class="goToTop"><a href="#"><i class="fas fa-upload"></i></a></div>
+    </section>
+  </header>
+  <main class="linked-page">
+    <aside class="joinResponseAside">
+      <section class="linkPageAside" id="linkPageAside">
+        <div class="aside-heading">
+          <!--! Enter PageLink Heading  -->
+          <h2>Advance Method's</h2>
+        </div>
+        <div class="page-link">
+          <!--! PageLink is here. enter here id and get page's.-->
+          <ul id="advanceMethodLink"></ul>
+        </div>
+      </section>
+    </aside>
+    <section class="page-topic">
+      <!--! Topic Heading -->
+      <h2>Advance Method's Home</h2>
+      <hr class="hr-simple" />
+      <section class="forword-back-btn">
+        <div class="back-next-btn hint">
+          <div class="_hint"><a href="./index.html"><i class="fas fa-angle-left"></i>Back</a>
+            <div class="_sugest">
+              <p>Back to home</p>
+            </div>
+          </div>
+        </div>
+        <div class="back-next-btn hint">
+          <div class="_hint"><a href="AdvanceMethod-scroll-navigation-animation-02.html">Next <i
+                class="fas fa-angle-right"></i></a>
+            <div class="_sugest">
+              <p>Next Page</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--! Code Is Here  -->
+      <section class="codeIsHere">
+
+
+
+      </section>
+      <!--! /Code Is Here  -->
+      <section class="endingTopicLine">
+        <div class="pageLine"></div>
+        <div class="pageLine"></div>
+      </section>
+    </section>
+  </main>
+  <footer class="index-footer" id="footer"></footer>
+  <section class="searchBox">
+    <div class="searchIcon" id="searchIcon"><img src="./SearchIcon.png" id="searchIconChange" alt="SearchIcon"></div>
+    <div class="searchInput" id="searchInput"><input type="text" placeholder="Search..." id="search"
+        onkeyup="searchFunction()">
+      <div class="searchOver-f">
+        <ul class="searchMenu" id="addMenu"></ul>
+      </div>
+    </div>
+  </section>
+
+  <script src="linkPageAdvanceMthod.js"></script>
+  <script src="./search.js"></script>
+  <script src="./AllLengMenu.js"></script>
+  <script src="./gen.js"></script>
+  <script src="./lengPage.js"></script>
+  <script src="./CodeWithDW.js"></script>
+  <script src="./footerCopy.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,438 @@
+@import url("https://fonts.googleapis.com/css2?family=Genos&family=Tilt+Warp&display=swap");
+
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box
+}
+
+html {
+     scroll-behavior: smooth
+}
+
+body.index-body {
+     background: var(--main-theme);
+     color: var(--black-text)
+}
+
+hr.hr-simple {
+     border: var(--hr-border);
+     margin: 1em 0
+}
+
+mark {
+     background-color: var(--mark)
+}
+
+.mark {
+     background-color: var(--mark);
+     padding: 1px 2px;
+     width: min-content;
+}
+
+a {
+     color: var(--a-color)
+}
+
+p,
+li,
+span,
+mark {
+     font-family: var(--ubuntu);
+     font-family: Arial, Helvetica, sans-serif;
+     font-weight: 500;
+     font-size: .9em
+}
+
+:root {
+     --royal-blue: #0f1a33cc;
+     /*? Page background color */
+     /* --main-theme: #eaf8fd; */
+     --main-theme: white;
+     --linkPageAside: #dfdfdf;
+     --leng-topic-navBtn: #001212;
+     --btn-color: #ddd;
+     --btn-dark: #4d4d4d;
+     --hover-btn: #b0b0b0;
+     --black-text: black;
+     --white-text: white;
+     --wheat-convert-red: wheat;
+     --boxShadow-black-to-white-inset: inset 0 0 5px black;
+     --navigation-detail-doxShadow: -1px 1px 4px #00000080;
+     --boxShadow-black-outset: 0 0 5px black;
+     --boxShadow-black-inset: inset 0 0 5px rgb(0, 0, 0);
+     --border-2pxSolid-wheat: 2px solid wheat --border-2pxSolid-black: 2px solid black;
+     --border-bottom-2pxSolid-white: 2px solid black;
+     --border-2pxDashed-marron: 2px dashed #530000;
+     --code-page-ul-li-borderBottom: 2px solid black;
+     --hr-border: 2px solid black;
+     --border-2pxSolid-black: 2px solid black;
+     --border-1pxSolid-black: 1px solid black;
+     --border-1pxSolid-white: 1px solid white;
+     --border-1pxSolid-gray: 1px solid gray;
+     --darkGreen: darkgreen;
+     --darkBlue: darkblue;
+     /*? Header Menu and header top : bg  */
+     /* --light-yellow: #ffffcc; */
+     --light-yellow: #e8e8e8;
+     /** using header-heading and footer : bg*/
+     --header-heading-bg: #e8e8e8;
+     /*? Header Text Color  */
+     --header-heading-text: white;
+     /*? Header Nav bg color  */
+     --light-blue: #f9fffe;
+     --black: black;
+     --white: white;
+     --gray: gray;
+     --light-red: #ffa5a5;
+     --dark-yellow: #ffe600;
+     --mark: hsla(0, 0%, 36%, .5);
+     --searchIcon-bg: hsla(0, 100%, 80%, .5);
+     --searchIcon-bg-hover: hsla(0, 100%, 65%, 0.5);
+     --overlay-bg: rgba(197, 197, 255, .95);
+     --imp-txt: pink;
+     --a-color: blue;
+     --theme-line-color: rgb(255, 30, 30);
+     /*? Footer Gradient  */
+     --footer-bg: linear-gradient(#d8d8d8 0%, #ffffff 100%);
+}
+
+.darkMode {
+     --royal-blue: hsla(180, 100%, 75%, .5);
+     --main-theme: #00050f;
+     --linkPageAside: rgb(10, 10, 10);
+     --leng-topic-navBtn: #ffffcc;
+     --btn-color: #2a2a2a;
+     --btn-dark: #dddddd;
+     --hover-btn: #4d4d4d;
+     --black-text: white;
+     --white-text: black;
+     --wheat-convert-red: rgb(255, 100, 100);
+     --boxShadow-black-to-white-inset: inset 0 0 5px white;
+     --navigation-detail-doxShadow: -1px 1px 4px #ffffff80;
+     --boxShadow-black-outset: 0 0 5px white;
+     --boxShadow-black-inset: inset 0 0 5px rgb(255, 255, 255);
+     --border-2pxSolid-black: 2px solid white;
+     --border-bottom-2pxSolid-white: 2px solid white;
+     --border-2pxDashed-marron: 2px dashed #ff4444;
+     --code-page-ul-li-borderBottom: 2px solid white;
+     --hr-border: 2px solid white;
+     --border-2pxSolid-black: 2px solid rgb(255, 255, 255);
+     --border-1pxSolid-black: 1px solid white;
+     --border-1pxSolid-white: 1px solid black;
+     --border-1pxSolid-gray: 1px solid lightgray;
+     --header-heading-bg: #141414;
+     --darkGreen: lightgreen;
+     --darkBlue: lightblue;
+     --light-yellow: #001212;
+     --light-blue: #02001b;
+     --black: white;
+     --white: black;
+     --gray: lightgray;
+     --light-red: #ff3d3d;
+     --dark-yellow: #fff27c;
+     --mark: hsla(0, 0%, 100%, .5);
+     --searchIcon-bg: hsla(0, 0%, 100%, .5);
+     --overlay-bg: rgb(2, 0, 26, .95);
+     --imp-txt: rgb(80, 0, 80);
+     --a-color: #ff3737;
+     --theme-line-color: rgb(255, 175, 175);
+     --footer-bg: linear-gradient(#141414 0%, hsla(0, 0%, 100%, 0.01) 100%);
+}
+
+:root {
+     --header-heading: "Genos", sans-serif;
+     --a-header: "Tilt Warp", cursive;
+     --logo-title: "Fira Code", monospace;
+     --a-font: "Ubuntu", sans-serif;
+     --main-heading: "Josefin Sans", sans-serif;
+     --normal-roboto: "Roboto", sans-serif;
+     --nunito: "Nunito", sans-serif;
+     --sono: "Sono", sans-serif;
+     --ubuntu: "Ubuntu", sans-serif;
+     --prompt: "Prompt", sans-serif;
+     --martian-mono: "Martian Mono", monospace;
+     --response-content-red: rgb(255, 50, 50);
+     --boxShadow-white-outset: 0 0 5px white;
+     --border-3pxSolid-red: 3px solid red;
+     --border-2pxDashed-red: 2px dashed red;
+     --border-2pxSolid-white: 2px solid white;
+     --border-1pxSolid-white: 1px solid white;
+     --border-2pxSolid-black: 2px solid black;
+     --leng-code-bg: rgba(255, 255, 255, .3);
+     --pageLink-btn-a-bg: #f5deb280;
+     --response-pageLink-btn-a-bg: #f5deb2aa;
+     --main-margin: 50px 100px;
+     --main-padding: 0 50px;
+     --MP-all-3vw: 3vw 3vw;
+     --MP-tb-2vw: 2vw 0;
+     --MP-tb-1em: 1em 0;
+     --MP-tb-1vh: 1vh 0;
+     --MP-tb-1vw: 1vw 0;
+     --MP-btn-01: 1vw 1.5vw;
+     --theme-line: .2em solid;
+     --theme-color: #ff3737;
+}
+
+.m-tb-1em {
+     margin: var(--MP-tb-1em)
+}
+
+.m-tb-1vh {
+     margin: var(--MP-tb-1vh)
+}
+
+.m-tb-1vw {
+     margin: var(--MP-tb-1vh)
+}
+
+.m-all-1em {
+     margin: 1em 1em
+}
+
+.m-all-1vh {
+     margin: 1vh 1vh
+}
+
+.m-all-1vw {
+     margin: 1vw 1vw
+}
+
+.m-lr-1em {
+     margin: 0 1em
+}
+
+.m-lr-2em {
+     margin: 0 2em
+}
+
+.m-lr-3vw {
+     margin: 0 3vw
+}
+
+.p-tb-1em {
+     padding: var(--MP-tb-1em)
+}
+
+.p-tb-1vh {
+     padding: var(--MP-tb-1vh)
+}
+
+.p-tb-1vw {
+     padding: var(--MP-tb-1vh)
+}
+
+.p-lr-3em {
+     padding: 0 3em
+}
+
+ul.m-all-05em-3vw {
+     margin: .5em 3vw
+}
+
+.lightGreen {
+     color: var(--darkGreen)
+}
+
+.lightBlue {
+     color: var(--darkBlue)
+}
+
+.purple {
+     color: purple
+}
+
+.yellow {
+     color: yellow
+}
+
+.bold {
+     font-weight: bold
+}
+
+.bold-600 {
+     font-weight: 600
+}
+
+.bold-900 {
+     font-weight: 900
+}
+
+.line {
+     border: var(--theme-line);
+     border-color: var(--theme-color);
+     margin: var(--main-margin);
+     width: 10vw;
+     color: #f5deb3
+}
+
+.line-title {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: var(--main-margin);
+     padding: var(main-padding)
+}
+
+.lineTwo {
+     border: var(--theme-line);
+     border-color: var(--theme-color);
+     width: 30vw;
+     margin: 1em 2em;
+     border-radius: 100%;
+     -webkit-border-radius: 100%;
+     -moz-border-radius: 100%;
+     -ms-border-radius: 100%;
+     -o-border-radius: 100%
+}
+
+.left-line {
+     animation: LeftToRight 1s ease forwards 0s;
+     -webkit-animation: LeftToRight 1s ease forwards 0s;
+     border-radius: 100%;
+     -webkit-border-radius: 100%;
+     -moz-border-radius: 100%;
+     -ms-border-radius: 100%;
+     -o-border-radius: 100%
+}
+
+.right-line {
+     animation: RightToLeft 1s ease forwards 0s;
+     -webkit-animation: RightToLeft 1s ease forwards 0s;
+     border-radius: 100%;
+     -webkit-border-radius: 100%;
+     -moz-border-radius: 100%;
+     -ms-border-radius: 100%;
+     -o-border-radius: 100%
+}
+
+.line-heading {
+     width: 30vw;
+     display: flex;
+     justify-content: center;
+     align-items: center
+}
+
+.line-heading>h2 {
+     font-size: 1.5em;
+     font-family: var(--main-heading);
+     animation: BottomToTop 2s ease forwards 0s;
+     -webkit-animation: BottomToTop 2s ease forwards 0s
+}
+
+.a-btn {
+     color: var(--white);
+     cursor: pointer;
+     border: 1px solid var(--white);
+     background-color: var(--btn-dark);
+     padding: .3em .3em;
+     text-decoration: none;
+     font-family: var(--a-font);
+     font-weight: 600;
+     border-radius: 4px;
+     -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+     -ms-border-radius: 4px;
+     -o-border-radius: 4px;
+}
+
+.a-btn:hover {
+     scale: .95;
+     transition: .3s ease-in-out;
+     -webkit-transition: .3s ease-in-out;
+     -moz-transition: .3s ease-in-out;
+     -ms-transition: .3s ease-in-out;
+     -o-transition: .3s ease-in-out;
+}
+
+._hover {
+     position: relative;
+     cursor: pointer
+}
+
+._down {
+     position: absolute;
+     display: none
+}
+
+._hover:hover ._down {
+     bottom: -10;
+     display: block
+}
+
+.bt-animation-2s {
+     animation: BottomToTop 2s ease forwards 0s;
+     -webkit-animation: BottomToTop 2s ease forwards 0s
+}
+
+@keyframes LeftToRight {
+     0% {
+          transform: translateX(-1000px);
+          -webkit-transform: translateX(-1000px);
+          -moz-transform: translateX(-1000px);
+          -ms-transform: translateX(-1000px);
+          -o-transform: translateX(-1000px)
+     }
+
+     100% {
+          transform: translateX(0);
+          -webkit-transform: translateX(0);
+          -moz-transform: translateX(0);
+          -ms-transform: translateX(0);
+          -o-transform: translateX(0)
+     }
+}
+
+@keyframes RightToLeft {
+     0% {
+          transform: translateX(1000px);
+          -webkit-transform: translateX(1000px);
+          -moz-transform: translateX(1000px);
+          -ms-transform: translateX(1000px);
+          -o-transform: translateX(1000px)
+     }
+
+     100% {
+          transform: translateX(0);
+          -webkit-transform: translateX(0);
+          -moz-transform: translateX(0);
+          -ms-transform: translateX(0);
+          -o-transform: translateX(0)
+     }
+}
+
+@keyframes TopToBottom {
+     0% {
+          transform: translateY(-1000px);
+          -webkit-transform: translateY(-1000px);
+          -moz-transform: translateY(-1000px);
+          -ms-transform: translateY(-1000px);
+          -o-transform: translateY(-1000px)
+     }
+
+     100% {
+          transform: translateY(0);
+          -webkit-transform: translateY(0);
+          -moz-transform: translateY(0);
+          -ms-transform: translateY(0);
+          -o-transform: translateY(0)
+     }
+}
+
+@keyframes BottomToTop {
+     0% {
+          transform: translateY(1000px);
+          -webkit-transform: translateY(1000px);
+          -moz-transform: translateY(1000px);
+          -ms-transform: translateY(1000px);
+          -o-transform: translateY(1000px)
+     }
+
+     100% {
+          transform: translateY(0);
+          -webkit-transform: translateY(0);
+          -moz-transform: translateY(0);
+          -ms-transform: translateY(0);
+          -o-transform: translateY(0)
+     }
+}

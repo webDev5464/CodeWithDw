@@ -1,0 +1,1 @@
+let PageLinkJavaScript=document.getElementById("pageLinkJavaScript");const lengDetailJavaScript=[{link:"./JavaScript-Basic-01.html",pageName:"Basic of JavaScript"}];lengDetailJavaScript.map((function(a){PageLinkJavaScript.innerHTML+=`\n        <li><a href="${a.link}">${a.pageName}</a></li>\n    `}));

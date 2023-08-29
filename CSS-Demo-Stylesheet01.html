@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeWithDw</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    header {
+      background-color: #3bd63b;
+      padding: 1em 1.3em;
+      color: white;
+      border-radius: 10px;
+      margin: 1em 0;
+    }
+
+    main {
+      display: flex;
+    }
+
+    main>section:first-child {
+      width: 20vw;
+    }
+
+    main>section:first-child>a {
+      display: block;
+      background-color: #ddd;
+      padding: .5em .7em;
+      margin: .5em 0;
+      border-radius: 5px;
+      font-weight: 600;
+      color: black;
+      text-decoration: none;
+      border: 1px solid gray;
+    }
+
+    main>section:first-child>a:hover {
+      background-color: white;
+    }
+
+    main>section:first-child>a:first-child {
+      background-color: #3bd63b;
+      color: white;
+    }
+
+    main>section:nth-child(2) {
+      width: 60vw;
+      padding: 0 1em;
+    }
+
+    main>section:nth-child(2)>div:first-child>p>span>a,
+    main>section:nth-child(2)>div:last-child>p>span>a {
+      color: black;
+    }
+
+    main>aside {
+      width: 20vw;
+      background-color: #56ccff;
+      padding: .5em 1em;
+    }
+
+    footer {
+      background-color: #ddd;
+      border-radius: 10px;
+      font-size: .8em;
+      padding: 1em;
+      margin: 1em 0;
+      border: 1px solid gray;
+    }
+
+    @media screen and (max-width:800px) {
+      main>section:first-child {
+        width: 30vw;
+      }
+
+      main>section:nth-child(2) {
+        width: 40vw;
+      }
+
+      main>aside {
+        width: 30vw;
+      }
+    }
+
+    @media screen and (max-width:550px) {
+      main {
+        flex-direction: column;
+      }
+
+      main>section:first-child,
+      main>section:nth-child(2),
+      main>aside {
+        width: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Welcome to My Homepage</h1>
+    <p>Use the menu to select different Stylesheets</p>
+  </header>
+  <main>
+    <section><a href="./CSS-Demo-Stylesheet01.html">Stylesheet 1</a><a href="./CSS-Demo-Stylesheet02.html">Stylesheet
+        2</a><a href="./CSS-Demo-Stylesheet-03.html">Stylesheet 3</a><a href="./CSS-Demo-Stylesheet-04.html">Stylesheet
+        4</a><a href="./CSS-Demo-Stylesheet-05.html">No Stylesheet</a></section>
+    <section>
+      <div>
+        <h2>Same Page Different Stylesheets</h2>
+        <p>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change
+          the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following
+          links: <span><a href="./CSS-Demo-Stylesheet01.html">Stylesheet 1</a>, <a
+              href="./CSS-Demo-Stylesheet02.html">Stylesheet 2</a>, <a href="./CSS-Demo-Stylesheet-03.html">Stylesheet
+              3</a>, <a href="./CSS-Demo-Stylesheet-04.html">Stylesheet 4</a></span></p>
+      </div>
+      <div>
+        <h2>No Styles</h2>
+        <p>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page
+          looks like with no stylesheet: <span><a href="./CSS-Demo-Stylesheet-05.html">No Stylesheet</a></span></p>
+      </div>
+    </section>
+    <aside>
+      <h3>Side-Bar</h3>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+        dolore magna aliquam erat volutpat.</p>
+    </aside>
+  </main>
+  <footer>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+      dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
+      lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit
+      esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio
+      dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,152 @@
+.webBrowserImg>img {
+  width: 70vw;
+  margin: 1em 0;
+  border: var(--border-1pxSolid-black)
+}
+
+.structure {
+  margin: 1em;
+  padding: 1em;
+  background-color: var(--gray);
+  border: var(--border-1pxSolid-white);
+  color: var(--white-text)
+}
+
+.structure div {
+  padding: 1em 0;
+  margin: 1em;
+  border: var(--border-1pxSolid-white);
+  color: var(--white-text)
+}
+
+.notepadImg>img {
+  width: 60vw
+}
+
+.html-editor-img>img {
+  width: 60vw;
+  margin: 1em 0
+}
+
+.bulbExample {
+  display: flex;
+  align-items: last baseline;
+  justify-content: center;
+  background-color: var(--white);
+  padding: 1em
+}
+
+.bulbExample>button {
+  height: fit-content
+}
+
+#bulb {
+  width: 20vw
+}
+
+#changeCSSshowElement {
+  display: none
+}
+
+.reactExampleImg>img {
+  width: 50vw;
+  box-shadow: var(--boxShadow-black-outset);
+  margin: 1em 0
+}
+
+.installingDone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1em 0 0 0
+}
+
+.installingDone>img {
+  width: 40vw
+}
+
+.appStructure>img {
+  width: 30vw;
+  box-shadow: var(--boxShadow-black-outset);
+  margin: 1em 0
+}
+
+.npm-start-img>img {
+  width: 40vw;
+  box-shadow: var(--boxShadow-black-outset);
+  margin: 1em 0
+}
+
+.pageImgWidth60vw>img {
+  width: 60vw;
+  box-shadow: var(--boxShadow-black-outset);
+  margin: 1em 0
+}
+
+.pageImgWidth50vw>img {
+  width: 50vw;
+  box-shadow: var(--boxShadow-black-outset);
+  margin: .5em 0
+}
+
+@media screen and (max-width:1350px) {
+  .npm-start-img>img {
+    width: 50vw
+  }
+}
+
+@media screen and (max-width:850px) {
+  .appStructure>img {
+    width: 50vw
+  }
+
+  .pageImgWidth60vw>img {
+    width: 60vw
+  }
+
+  .npm-start-img>img {
+    width: 70vw
+  }
+}
+
+@media screen and (max-width:600px) {
+  .structure {
+    margin: .5em;
+    padding: .5em
+  }
+
+  .structure div {
+    padding: .5em 0;
+    margin: .5em
+  }
+
+  .notepadImg>img {
+    width: 80vw
+  }
+
+  .reactExampleImg>img {
+    width: 93vw;
+    box-shadow: var(--boxShadow-black-outset);
+    margin: 1em 0
+  }
+
+  .installingDone>img {
+    width: 80vw
+  }
+
+  .appStructure>img {
+    width: 80vw
+  }
+
+  .pageImgWidth60vw>img {
+    width: 90vw
+  }
+
+  .npm-start-img>img {
+    width: 90vw
+  }
+
+  .pageImgWidth50vw>img {
+    width: 70vw
+  }
+}
